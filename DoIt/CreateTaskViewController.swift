@@ -26,7 +26,7 @@ class CreateTaskViewController: UIViewController {
     @IBAction func addTapped(_ sender: Any) {
         //Create a task from the outlet information
         
-        let task = Task()
+        let task = Task(context: <#T##NSManagedObjectContext#>)
         task.name = taskNameTextField.text!
         task.important = importantSwitch.isOn
         
